@@ -1,0 +1,18 @@
+scale = 25
+xSize = 40
+ySize = 30
+NumberOfGroups = 1
+StartPoint = 1.16,1.08
+EndPoint = 37.92,28.32
+MinSpeed = 0.0
+MaxSpeed = 2.6
+MeanSpeed = 1.3
+SDevSpeed = 0.0
+Size = 10
+NumberOfPatterns = 2
+Pattern first : 
+1
+StartPoint = 10.0,4.44 ; EndPoint = 27.96,4.48
+Pattern second : 
+1
+StartPoint = 29.16,6.44 ; EndPoint = 29.48,18.88

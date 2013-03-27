@@ -21,7 +21,7 @@ public class PropertySet {
 
     public final static boolean HIGH_PRECISION= false;
 
-    public static final String FILE_PATH = "Test";
+    public static final String FILE_PATH = "Test2";
     public static final double TIME_STEP = 0.05;
 
 

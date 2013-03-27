@@ -48,15 +48,15 @@ class WrapUp implements Steppable {
                 return;
             }
         }
-        currentPatternNumber++;
-        if(currentPatternNumber<goalsForPattern.size()){
+        currentPatternNumber=(currentPatternNumber+1)%goalsForPattern.size();
+//        if(currentPatternNumber<goalsForPattern.size()){
 
             List<Agent> unallocated =state.allocateGoalsToAgents(agents,goalsForPattern.get(currentPatternNumber));
             state.setGoalsForUnallocated(unallocated);
             return;
-        }
+//        }
 //        System.out.println("here");
-        state.kill();
+//        state.kill();
     }
 
 

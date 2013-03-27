@@ -7,7 +7,7 @@ EndPoint = 37.92,28.32
 MinSpeed = 0.0
 MaxSpeed = 2.6
 MeanSpeed = 1.3
-SDevSpeed = 0.0
+SDevSpeed = 0.5
 Size = 10
 NumberOfPatterns = 2
 Pattern first : 

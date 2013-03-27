@@ -20,13 +20,13 @@ import java.util.HashSet;
 public class PatternLine {
     private final Point2d startPoint;
     private final Point2d endPoint;
-    private final int numberOfAgentsNeeded;
+
     private static final double PERSONAL_SPACE = 0.1;
 
     public PatternLine(Point2d startPoint, Point2d endPoint) {
         this.startPoint = startPoint;
         this.endPoint = endPoint;
-        numberOfAgentsNeeded = calculateNumberOfAgentsNeeded();
+
     }
 
     private int calculateNumberOfAgentsNeeded() {
@@ -49,7 +49,7 @@ public class PatternLine {
     }
 
     public int getNumberOfAgentsNeeded() {
-        return numberOfAgentsNeeded;
+        return getGoalPoints().size();
     }
 
     public Collection<? extends Point2d> getGoalPoints() {

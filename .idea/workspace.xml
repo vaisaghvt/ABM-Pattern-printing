@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12cfc54-d663-4dea-84f3-cb80f9c1f002" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Model.java" afterPath="$PROJECT_DIR$/src/app/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/datatypes/PatternLine.java" afterPath="$PROJECT_DIR$/src/datatypes/PatternLine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/PropertySet.java" afterPath="$PROJECT_DIR$/src/app/PropertySet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test2" afterPath="$PROJECT_DIR$/Test2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/WrapUp.java" afterPath="$PROJECT_DIR$/src/app/WrapUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PatternBasedMovement.iws" />
@@ -29,16 +29,18 @@
     <file path="/RVOSpace.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364133789070" ignored="false" />
     <file path="/RVO_2_1.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364134164961" ignored="false" />
     <file path="/PrecisePoint.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364134418662" ignored="false" />
-    <file path="/WrapUp.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364378999072" ignored="false" />
+    <file path="/WrapUp.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364401054594" ignored="false" />
     <file path="/Geometry.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364134602816" ignored="false" />
     <file path="/PatternCreatorLevel.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364309781086" ignored="false" />
     <file path="/DestinationPattern.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364321185092" ignored="false" />
-    <file path="/PatternLine.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364370009285" ignored="false" />
+    <file path="/PatternLine.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364401391234" ignored="false" />
     <file path="/FinalLevel.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364309879272" ignored="false" />
     <file path="/a.dummy" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364369384822" ignored="false" />
     <file path="/Agent.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364370537805" ignored="false" />
-    <file path="/Model.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364373031428" ignored="false" />
-    <file path="/Dummy.txt" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364378957153" ignored="false" />
+    <file path="/Model.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364401195253" ignored="false" />
+    <file path="/Dummy.txt" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364399524075" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/gameAnalyzer/EnvironmentImporter/src/stats/chartdisplays/RoomAnalysisFrame.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364400419577" ignored="false" />
+    <file path="/RoomAnalysisFrame.java" changelist="c12cfc54-d663-4dea-84f3-cb80f9c1f002" time="1364400414238" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,11 +129,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Model.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Model.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="21" selection-start="5681" selection-end="5681" vertical-scroll-proportion="0.0">
+            <state line="116" column="27" selection-start="3591" selection-end="3591" vertical-scroll-proportion="0.11790393">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datatypes/ModelDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="249" column="81" selection-start="7662" selection-end="7662" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#692#704#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,7 +153,7 @@
       <file leaf-file-name="DestinationPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/datatypes/DestinationPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
+            <state line="49" column="27" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,16 +162,7 @@
       <file leaf-file-name="PatternLine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/datatypes/PatternLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RVO_2_1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/motionPlanners/rvo2/RVO_2_1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="343" column="38" selection-start="12555" selection-end="12555" vertical-scroll-proportion="0.0">
+            <state line="51" column="37" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,16 +189,25 @@
       <file leaf-file-name="WrapUp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/WrapUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="36" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+            <state line="65" column="59" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test2" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="381" column="0" selection-start="14078" selection-end="14078" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test2" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test2">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="15" selection-start="159" selection-end="159" vertical-scroll-proportion="0.29475984">
+            <state line="8" column="24" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -234,19 +248,20 @@
         <option value="$PROJECT_DIR$/src/app/Gui.java" />
         <option value="$PROJECT_DIR$/src/utility/Geometry.java" />
         <option value="$PROJECT_DIR$/Test" />
-        <option value="$PROJECT_DIR$/src/datatypes/PatternLine.java" />
         <option value="$PROJECT_DIR$/src/datatypes/DestinationPattern.java" />
-        <option value="$PROJECT_DIR$/src/app/Model.java" />
         <option value="$PROJECT_DIR$/src/motionPlanners/rvo2/RVO_2_1.java" />
         <option value="$PROJECT_DIR$/src/agent/Agent.java" />
+        <option value="$PROJECT_DIR$/Test2" />
         <option value="$PROJECT_DIR$/src/app/PropertySet.java" />
         <option value="$PROJECT_DIR$/src/app/WrapUp.java" />
-        <option value="$PROJECT_DIR$/Test2" />
+        <option value="$PROJECT_DIR$/src/datatypes/PatternLine.java" />
+        <option value="$PROJECT_DIR$/src/app/Model.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="492" />
+    <option name="y" value="79" />
     <option name="width" value="1920" />
     <option name="height" value="970" />
   </component>
@@ -345,144 +360,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motionPlanners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motionPlanners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rvo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datatypes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="creator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternBasedMovement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -502,12 +379,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -530,19 +407,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -570,6 +434,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -712,12 +589,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="970" extended-state="7" />
+    <frame x="492" y="79" width="1920" height="970" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29764706" sideWeight="0.9978142" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39882353" sideWeight="0.9992082" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -725,14 +603,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.21058823" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.06" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.3529412" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4282353" sideWeight="0.97652084" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.5035294" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4282353" sideWeight="0.97652084" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29764706" sideWeight="0.9978142" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -797,23 +674,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/creator/CreatorMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="34" selection-start="1646" selection-end="1647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datatypes/ModelDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="36" selection-start="7729" selection-end="7729" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#692#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/environment/Space.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="13" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
@@ -845,27 +705,6 @@
         <state line="13" column="29" selection-start="440" selection-end="440" vertical-scroll-proportion="0.4157044" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="21" selection-start="5681" selection-end="5681" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datatypes/DestinationPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datatypes/PatternLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/motionPlanners/rvo2/RVO_2_1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="343" column="38" selection-start="12555" selection-end="12555" vertical-scroll-proportion="0.0">
@@ -887,6 +726,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/PropertySet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="49" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
@@ -896,14 +742,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/WrapUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="36" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+        <state line="65" column="59" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test2">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="159" selection-end="159" vertical-scroll-proportion="0.29475984">
+        <state line="381" column="0" selection-start="14078" selection-end="14078" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datatypes/ModelDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="81" selection-start="7662" selection-end="7662" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#692#704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datatypes/DestinationPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="27" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datatypes/PatternLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="37" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="27" selection-start="3591" selection-end="3591" vertical-scroll-proportion="0.11790393">
           <folding />
         </state>
       </provider>

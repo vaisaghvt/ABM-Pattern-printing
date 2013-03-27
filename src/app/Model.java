@@ -159,13 +159,17 @@ public class Model extends SimState {
         int i=0;
         List<Agent> unallocated = new ArrayList<Agent>();
         unallocated.addAll(agentList);
+        try{
         for(Point2d goal:goals){
             agentList.get(i).setGoal(goal);
             unallocated.remove(agentList.get(i));
             i++;
         }
-        return unallocated;
 
+        }catch(IndexOutOfBoundsException e){
+            System.out.println(goals.size()+ ","+agentList.size());
+        }
+        return unallocated;
 
 
     }

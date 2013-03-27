@@ -68,6 +68,9 @@ class WrapUp implements Steppable {
 
     public static Point2d nextDefaultLocation(){
         currentDefaultLocation = new Point2d(currentDefaultLocation.x+xDisplacement, currentDefaultLocation.y+ yDisplacement);
+        if(currentDefaultLocation.x> Model.publicInstance.getWorldXSize()){
+            currentDefaultLocation = new Point2d(startingPoint.x, startingPoint.y+ xDisplacement);
+        }
         return currentDefaultLocation;
     }
 }

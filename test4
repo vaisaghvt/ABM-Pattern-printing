@@ -1,0 +1,98 @@
+scale = 25
+xSize = 40
+ySize = 30
+NumberOfGroups = 1
+StartPoint = 1.16,1.16
+EndPoint = 38.0,26.92
+MinSpeed = 0.0
+MaxSpeed = 2.6
+MeanSpeed = 1.3
+SDevSpeed = 0.0
+Size = 1
+NumberOfPatterns = 3
+Pattern first : 
+15
+StartPoint = 4.64,6.72 ; EndPoint = 4.6,14.88
+StartPoint = 4.6,10.44 ; EndPoint = 8.96,10.32
+StartPoint = 9.0,7.16 ; EndPoint = 9.04,14.6
+StartPoint = 9.92,13.84 ; EndPoint = 11.96,7.0
+StartPoint = 12.04,6.96 ; EndPoint = 15.32,14.52
+StartPoint = 10.88,10.56 ; EndPoint = 13.6,10.4
+StartPoint = 17.04,7.32 ; EndPoint = 17.48,15.2
+StartPoint = 17.28,7.6 ; EndPoint = 20.76,8.88
+StartPoint = 20.88,9.28 ; EndPoint = 17.52,10.88
+StartPoint = 22.44,7.48 ; EndPoint = 23.08,15.32
+StartPoint = 22.48,7.4 ; EndPoint = 25.16,8.12
+StartPoint = 25.4,8.44 ; EndPoint = 22.96,9.64
+StartPoint = 28.2,7.44 ; EndPoint = 30.52,9.72
+StartPoint = 32.16,7.2 ; EndPoint = 30.76,9.92
+StartPoint = 30.56,10.16 ; EndPoint = 30.64,13.92
+Pattern second : 
+21
+StartPoint = 5.12,6.8 ; EndPoint = 5.12,15.64
+StartPoint = 5.12,6.92 ; EndPoint = 9.56,7.4
+StartPoint = 9.56,7.44 ; EndPoint = 9.68,10.04
+StartPoint = 9.64,10.24 ; EndPoint = 5.08,10.44
+StartPoint = 9.72,10.36 ; EndPoint = 9.68,13.6
+StartPoint = 9.68,13.8 ; EndPoint = 5.04,15.6
+StartPoint = 10.56,6.2 ; EndPoint = 11.08,6.4
+StartPoint = 11.24,6.6 ; EndPoint = 11.28,7.28
+StartPoint = 11.2,7.44 ; EndPoint = 10.88,7.88
+StartPoint = 10.56,6.44 ; EndPoint = 10.24,7.0
+StartPoint = 10.44,7.04 ; EndPoint = 10.96,6.68
+StartPoint = 12.76,7.12 ; EndPoint = 13.0,14.68
+StartPoint = 13.12,7.16 ; EndPoint = 16.0,8.4
+StartPoint = 16.2,8.8 ; EndPoint = 16.2,12.08
+StartPoint = 16.16,12.4 ; EndPoint = 13.4,14.4
+StartPoint = 17.4,14.16 ; EndPoint = 19.64,7.44
+StartPoint = 19.8,7.56 ; EndPoint = 22.08,13.32
+StartPoint = 18.72,10.88 ; EndPoint = 20.8,10.64
+StartPoint = 23.08,7.2 ; EndPoint = 24.76,9.36
+StartPoint = 25.92,7.16 ; EndPoint = 24.84,9.48
+StartPoint = 24.8,9.56 ; EndPoint = 24.84,12.68
+Pattern third : 
+44
+StartPoint = 6.68,4.12 ; EndPoint = 16.6,3.76
+StartPoint = 11.36,4.16 ; EndPoint = 11.32,11.68
+StartPoint = 13.76,5.8 ; EndPoint = 13.64,11.76
+StartPoint = 13.96,11.84 ; EndPoint = 18.56,12.12
+StartPoint = 18.6,12.12 ; EndPoint = 18.6,5.56
+StartPoint = 19.56,5.48 ; EndPoint = 24.56,5.32
+StartPoint = 22.12,5.4 ; EndPoint = 22.8,12.16
+StartPoint = 25.72,5.6 ; EndPoint = 25.56,11.84
+StartPoint = 25.56,11.92 ; EndPoint = 31.32,11.72
+StartPoint = 31.32,11.72 ; EndPoint = 31.08,5.6
+StartPoint = 11.12,21.76 ; EndPoint = 11.08,26.44
+StartPoint = 11.24,26.6 ; EndPoint = 25.48,26.16
+StartPoint = 25.68,26.04 ; EndPoint = 25.76,21.76
+StartPoint = 11.32,21.88 ; EndPoint = 12.84,22.6
+StartPoint = 13.16,22.64 ; EndPoint = 15.48,22.68
+StartPoint = 15.96,22.56 ; EndPoint = 18.8,22.4
+StartPoint = 19.32,22.32 ; EndPoint = 21.8,22.32
+StartPoint = 22.64,22.32 ; EndPoint = 24.72,21.8
+StartPoint = 25.28,21.68 ; EndPoint = 25.76,21.36
+StartPoint = 25.8,21.24 ; EndPoint = 22.64,20.16
+StartPoint = 22.36,20.12 ; EndPoint = 17.96,20.0
+StartPoint = 17.92,19.88 ; EndPoint = 13.16,20.24
+StartPoint = 13.04,20.32 ; EndPoint = 11.28,21.44
+StartPoint = 15.56,19.08 ; EndPoint = 17.64,18.88
+StartPoint = 17.72,19.08 ; EndPoint = 17.8,20.12
+StartPoint = 17.72,20.24 ; EndPoint = 15.84,20.4
+StartPoint = 15.72,20.6 ; EndPoint = 15.76,21.44
+StartPoint = 16.12,21.48 ; EndPoint = 18.08,21.36
+StartPoint = 18.92,18.72 ; EndPoint = 18.96,21.24
+StartPoint = 19.04,21.32 ; EndPoint = 19.72,21.28
+StartPoint = 19.84,21.2 ; EndPoint = 19.8,18.72
+StartPoint = 19.8,18.64 ; EndPoint = 19.12,18.76
+StartPoint = 16.52,18.8 ; EndPoint = 15.84,18.16
+StartPoint = 15.84,18.12 ; EndPoint = 15.8,17.28
+StartPoint = 15.8,17.12 ; EndPoint = 16.08,16.28
+StartPoint = 16.24,16.32 ; EndPoint = 16.6,16.68
+StartPoint = 16.8,16.8 ; EndPoint = 16.84,18.04
+StartPoint = 16.88,18.24 ; EndPoint = 16.64,18.64
+StartPoint = 19.28,18.4 ; EndPoint = 18.76,17.88
+StartPoint = 18.76,17.84 ; EndPoint = 18.64,16.6
+StartPoint = 18.6,16.56 ; EndPoint = 19.08,15.96
+StartPoint = 19.24,16.16 ; EndPoint = 19.76,16.68
+StartPoint = 19.76,16.84 ; EndPoint = 19.72,17.72
+StartPoint = 19.72,18.16 ; EndPoint = 19.4,18.32

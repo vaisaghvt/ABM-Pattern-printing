@@ -115,6 +115,7 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
                 patternChoosingFrame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
                 patternChoosingFrame.setSize(400, 600);
                 setupComplete = true;
+                patternChoosingFrame.setLocation(500, 100);
 
                 interactionArea.revalidate();
             }
@@ -125,6 +126,83 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
 
     @Override
     public void clearUp() {
+        String tempString;
+
+
+
+        double minSpeed=0;
+        do {
+            tempString = (String) JOptionPane.showInputDialog(
+                    null,
+                    "Minimum Speed",
+                    "Input",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    null,
+                    "0");
+            try {
+                minSpeed = Double.parseDouble(tempString);
+            } catch (NumberFormatException numException) {
+                continue;
+            }
+        } while (minSpeed<0||minSpeed>2.6);
+
+
+        double maxSpeed=0;
+        do {
+            tempString = (String) JOptionPane.showInputDialog(
+                    null,
+                    "Maximum Speed?",
+                    "Input",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    null,
+                    "2.6");
+            try {
+                maxSpeed = Double.parseDouble(tempString);
+            } catch (NumberFormatException numException) {
+                continue;
+            }
+        } while (maxSpeed<minSpeed||maxSpeed>2.6);
+        double meanSpeed = (minSpeed + maxSpeed) /2.0;
+        do {
+            tempString = (String) JOptionPane.showInputDialog(
+                    null,
+                    "Average Speed?",
+                    "Input",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    null,
+                    Double.toString(meanSpeed));
+            try {
+                meanSpeed = Double.parseDouble(tempString);
+            } catch (NumberFormatException numException) {
+                continue;
+            }
+        } while (meanSpeed<minSpeed||meanSpeed>maxSpeed);
+
+        double sDev=0.0;
+        do {
+            tempString = (String) JOptionPane.showInputDialog(
+                    null,
+                    "Standard Deviation:",
+                    "Input",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    null,
+                    "0.0");
+            try {
+                sDev = Double.parseDouble(tempString);
+            } catch (NumberFormatException numException) {
+                continue;
+            }
+        } while (false);
+
+
+        model.setMinSpeed(minSpeed);
+        model.setMaxSpeed(maxSpeed);
+        model.setMeanSpeed(meanSpeed);
+        model.setSDevSpeed(sDev);
         model.setPatterns(listModel.elements());
         interactionArea.removeMouseListener(this);
         interactionArea.removeMouseMotionListener(this);

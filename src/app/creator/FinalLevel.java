@@ -7,13 +7,8 @@ package app.creator;
 import datatypes.DestinationPattern;
 import datatypes.ModelDetails;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.util.ArrayList;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  *
@@ -64,9 +59,7 @@ class FinalLevel extends AbstractLevel {
 
 
 
-        if (!model.getAgentGroups().isEmpty()) {
-            super.drawAgentGroups(g, (ArrayList) model.getAgentGroups());
-        }
+
 
         if(!model.getPatterns().isEmpty()){
             for(DestinationPattern pattern: model.getPatterns()){

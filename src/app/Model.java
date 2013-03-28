@@ -4,26 +4,19 @@ package app;
 import agent.Agent;
 import agent.Agent.Act;
 import agent.Agent.SenseThink;
-
-import datatypes.AgentGroup;
-
-
 import datatypes.DestinationPattern;
 import datatypes.ModelDetails;
 import environment.Space;
-
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import javax.vecmath.Point2d;
-
 import sim.engine.ParallelSequence;
 import sim.engine.Schedule;
 import sim.engine.Sequence;
 import sim.engine.SimState;
+
+import javax.vecmath.Point2d;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * Model
@@ -98,25 +91,22 @@ public class Model extends SimState {
         space = new Space(scenario.getxSize(), scenario.getySize(), 1, this);
 
 
-        if (scenario.getAgentGroups().size() > 1) {
-            System.out.println("ERROR!");
-            System.exit(0);
-        }
-        AgentGroup tempAgentGroup = scenario.getAgentGroups().get(0);
-        final double maxSpeed = tempAgentGroup.getMaxSpeed();
-        final double minSpeed = tempAgentGroup.getMinSpeed();
-        final double meanSpeed = tempAgentGroup.getMeanSpeed();
 
-        final double sdevSpeed = tempAgentGroup.getSDevSpeed();
-        int[][] spaces = initializeLattice(tempAgentGroup.getStartPoint().x, tempAgentGroup.getStartPoint().y,
-                tempAgentGroup.getEndPoint().x, tempAgentGroup.getEndPoint().y);
+
+        final double maxSpeed = scenario.getMaxSpeed();
+        final double minSpeed = scenario.getMinSpeed();
+        final double meanSpeed = scenario.getMeanSpeed();
+
+        final double sdevSpeed = scenario.getSDevSpeed();
+        int[][] spaces = initializeLattice(0, 0,
+                worldXSize-10, worldYSize-10);
 
 //                Vector2d groupDirection = new Vector2d(tempAgentGroup.getGroupDirectionX(),tempAgentGroup.getGroupDirectionY());//normalized vector to specify the group direction
 //                groupDirection.normalize();
 //
         for (int i = 0; i <scenario.getRequiredNumberOfAgents(); i++) {
             Agent agent = new Agent(this.getSpace());
-            Point2d position = this.getAgentPosition(tempAgentGroup.getStartPoint().x, tempAgentGroup.getStartPoint().y,
+            Point2d position = this.getAgentPosition(0, 0,
                     spaces);
             agent.setCurrentPosition(position.x, position.y);
 
@@ -286,7 +276,7 @@ public class Model extends SimState {
         System.exit(0);
     }
 
-    private int[][] initializeLattice(Double startx, Double starty, Double endx, Double endy) {
+    private int[][] initializeLattice(int startx, int starty, int endx, int endy) {
         int sizeX = (int) Math.floor((endx - startx) / (Agent.RADIUS * 2));
         int sizeY = (int) Math.floor((endy - starty) / (Agent.RADIUS * 2));
         return new int[sizeX][sizeY];

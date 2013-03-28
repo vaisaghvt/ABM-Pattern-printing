@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="abmcs_core">
+    <CLASSES>
+      <root url="jar://E:/ibevac/lib/abmcs_core.jar!/" />
+      <root url="jar://E:/ibevac/lib/commons-math-2.2.jar!/" />
+      <root url="jar://E:/ibevac/lib/guava-11.0.1.jar!/" />
+      <root url="jar://E:/ibevac/lib/itext-1.2.jar!/" />
+      <root url="jar://E:/ibevac/lib/jbox2d-library-2.1.2.jar!/" />
+      <root url="jar://E:/ibevac/lib/jcommon-1.0.0.jar!/" />
+      <root url="jar://E:/ibevac/lib/jfreechart-1.0.1.jar!/" />
+      <root url="jar://E:/ibevac/lib/jgrapht-jdk1.6.jar!/" />
+      <root url="jar://E:/ibevac/lib/jmf.jar!/" />
+      <root url="jar://E:/ibevac/lib/joda-time-2.0.jar!/" />
+      <root url="jar://E:/ibevac/lib/MASON_15.jar!/" />
+      <root url="jar://E:/ibevac/lib/mysql-connector-java-5.1.19-bin.jar!/" />
+      <root url="jar://E:/ibevac/lib/quaqua-colorchooser-only.jar!/" />
+      <root url="jar://E:/ibevac/lib/shiftone-jrat.jar!/" />
+      <root url="jar://E:/ibevac/lib/vecmath.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/ibevac/lib/joda-time-2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/ibevac/lib/joda-time-2.0-sources.jar!/" />
+      <root url="jar://E:/ibevac/lib/quaqua-colorchooser-only.jar!/" />
+    </SOURCES>
+  </library>
+</component>

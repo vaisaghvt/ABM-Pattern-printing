@@ -5,14 +5,13 @@
 package datatypes;
 
 
+import javax.swing.*;
+import javax.vecmath.Point2d;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Scanner;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.vecmath.Point2d;
 
 
 /**
@@ -29,8 +28,12 @@ public class ModelDetails {
     private int xSize;
     private int ySize;
 
-    private List<AgentGroup> agentGroups = new ArrayList<AgentGroup> ();
     private List<DestinationPattern> patterns;
+    private double minSpeed;
+    private double maxSpeed;
+    private double meanSpeed;
+    private double sdevSpeed;
+    private double SDevSpeed;
 
 
     public void loadFromFile(File file) {
@@ -40,41 +43,33 @@ public class ModelDetails {
             scale = readIntegerValue(sc);
             xSize = readIntegerValue(sc);
             ySize = readIntegerValue(sc);
-            int numberOfGroups = readIntegerValue(sc);
-            agentGroups = new ArrayList<AgentGroup>(numberOfGroups);
-            for(int i=0;i<numberOfGroups;i++){
-                Point2d startPoint = readPoint2d(sc);
-                Point2d endPoint = readPoint2d(sc);
-                double minSpeed = readDouble(sc);
-                double maxSpeed = readDouble(sc);
-                double meanSpeed = readDouble(sc);
-                double sdevSpeed = readDouble(sc);
-                int size = readIntegerValue(sc);
 
-                agentGroups.add(
-                        new AgentGroup(startPoint, endPoint, minSpeed, maxSpeed, meanSpeed, sdevSpeed, size)
-                );
 
-            }
+            minSpeed = readDouble(sc);
+            maxSpeed = readDouble(sc);
+            meanSpeed = readDouble(sc);
+            sdevSpeed = readDouble(sc);
+
 
             int numberOfPatterns = readIntegerValue(sc);
             this.patterns = new ArrayList<DestinationPattern>(numberOfPatterns);
-            for(int i=0;i<numberOfPatterns;i++){
+            for (int i = 0; i < numberOfPatterns; i++) {
 
                 String line = sc.nextLine().trim();
                 String name = line.split(" ")[1];
                 DestinationPattern destinationPattern = new DestinationPattern(name);
-                int numberOfLines = Integer.parseInt(sc.nextLine().trim());;
-                for(int j=0;j<numberOfLines;j++){
+                int numberOfLines = Integer.parseInt(sc.nextLine().trim());
+                ;
+                for (int j = 0; j < numberOfLines; j++) {
 
 
                     line = sc.nextLine().trim();
                     String[] points = line.split(";");
-                       String[] parts = points[0].trim().split("=");
-                        String pointString = parts[1].trim();
-                        String[] coordinates = pointString.split(",");
-                        double x = Double.parseDouble(coordinates[0].trim());
-                        double y = Double.parseDouble(coordinates[1].trim());
+                    String[] parts = points[0].trim().split("=");
+                    String pointString = parts[1].trim();
+                    String[] coordinates = pointString.split(",");
+                    double x = Double.parseDouble(coordinates[0].trim());
+                    double y = Double.parseDouble(coordinates[1].trim());
                     Point2d startPoint = new Point2d(x, y);
 
                     parts = points[1].trim().split("=");
@@ -89,7 +84,7 @@ public class ModelDetails {
                     ));
 
                 }
-               this.patterns.add(destinationPattern);
+                this.patterns.add(destinationPattern);
             }
 
 
@@ -101,8 +96,8 @@ public class ModelDetails {
 
     private double readDouble(Scanner sc) {
 
-        String line= sc.nextLine().trim();
-        String[] parts =line.split("=");
+        String line = sc.nextLine().trim();
+        String[] parts = line.split("=");
         return Double.parseDouble(parts[1].trim());
     }
 
@@ -117,55 +112,47 @@ public class ModelDetails {
     }
 
     private int readIntegerValue(Scanner sc) {
-        String line= sc.nextLine().trim();
-        String[] parts =line.split("=");
+        String line = sc.nextLine().trim();
+        String[] parts = line.split("=");
         return Integer.parseInt(parts[1].trim());
     }
 
 
-    public void saveToFile(){
+    public void saveToFile() {
 
         File scenarioFile = new File(title);
         PrintWriter writer = null;
         try {
             writer = new PrintWriter(new BufferedWriter(new FileWriter(scenarioFile)));
-        } catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
 
         writer.println("scale = " + scale);
-        writer.println("xSize = "+xSize);
-        writer.println("ySize = "+ySize);
-
-        writer.println("NumberOfGroups = "+agentGroups.size());
-        for (AgentGroup group: agentGroups){
+        writer.println("xSize = " + xSize);
+        writer.println("ySize = " + ySize);
 
 
-            writer.println("StartPoint = "
-                    +group.getStartPoint().x+","+group.getStartPoint().y);
 
-            writer.println("EndPoint = "
-                    +group.getEndPoint().x+","+group.getEndPoint().y);
 
-            writer.println("MinSpeed = "+group.getMinSpeed());
-            writer.println("MaxSpeed = "+group.getMaxSpeed());
-            writer.println("MeanSpeed = "+group.getMeanSpeed());
-            writer.println("SDevSpeed = "+group.getSDevSpeed());
-            writer.println("Size = "+group.getSize());
-        }
 
-        writer.println("NumberOfPatterns = "+patterns.size());
-        for(DestinationPattern pattern: patterns){
+            writer.println("MinSpeed = " + minSpeed);
+            writer.println("MaxSpeed = " + maxSpeed);
+            writer.println("MeanSpeed = " + meanSpeed);
+            writer.println("SDevSpeed = " + sdevSpeed);
+
+
+        writer.println("NumberOfPatterns = " + patterns.size());
+        for (DestinationPattern pattern : patterns) {
             writer.println("Pattern " + pattern.getName() + " : ");
             writer.println(pattern.getPatternLines().size());
-            for(PatternLine line: pattern.getPatternLines()){
+            for (PatternLine line : pattern.getPatternLines()) {
                 writer.print("StartPoint = "
                         + line.getStartPoint().x + "," + line.getStartPoint().y + " ; ");
                 writer.println("EndPoint = "
-                        +line.getEndPoint().x+","+line.getEndPoint().y);
+                        + line.getEndPoint().x + "," + line.getEndPoint().y);
             }
         }
-
 
 
         writer.close();
@@ -187,8 +174,6 @@ public class ModelDetails {
     public void setYSize(String ySize) {
         this.ySize = Integer.parseInt(ySize);
     }
-
-
 
 
     public void setScale(Integer scale) {
@@ -223,15 +208,6 @@ public class ModelDetails {
 
 
 
-
-    public List<AgentGroup> getAgentGroups() {
-        return this.agentGroups;
-    }
-
-    public void setAgentGroups(List<AgentGroup> agentGroups) {
-        this.agentGroups = agentGroups;
-    }
-
     public List<DestinationPattern> getPatterns() {
         return patterns;
     }
@@ -239,16 +215,48 @@ public class ModelDetails {
 
     public void setPatterns(Enumeration<DestinationPattern> patterns) {
         this.patterns = new ArrayList<DestinationPattern>();
-        while(patterns.hasMoreElements()){
+        while (patterns.hasMoreElements()) {
             this.patterns.add(patterns.nextElement());
         }
     }
 
     public int getRequiredNumberOfAgents() {
-        int numberOfAgentsNeeded =0;
-        for(DestinationPattern pattern: patterns){
+        int numberOfAgentsNeeded = 0;
+        for (DestinationPattern pattern : patterns) {
             numberOfAgentsNeeded = Math.max(numberOfAgentsNeeded, pattern.getNumberOfAgentsNeeded());
         }
         return numberOfAgentsNeeded;
+    }
+
+    public void setSDevSpeed(double SDevSpeed) {
+        this.sdevSpeed = SDevSpeed;
+    }
+
+    public void setMeanSpeed(double meanSpeed) {
+        this.meanSpeed = meanSpeed;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void setMinSpeed(double minSpeed) {
+        this.minSpeed = minSpeed;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public double getMinSpeed() {
+        return minSpeed;
+    }
+
+    public double getMeanSpeed() {
+        return meanSpeed;
+    }
+
+    public double getSDevSpeed() {
+        return SDevSpeed;
     }
 }

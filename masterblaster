@@ -1,0 +1,13 @@
+scale = 25
+xSize = 40
+ySize = 30
+MinSpeed = 0.0
+MaxSpeed = 2.6
+MeanSpeed = 1.3
+SDevSpeed = 0.0
+NumberOfPatterns = 1
+Pattern asdf : 
+3
+StartPoint = 13.92,4.24 ; EndPoint = 7.84,0.96
+StartPoint = 13.88,6.96 ; EndPoint = 22.72,2.8
+StartPoint = 19.76,3.24 ; EndPoint = 23.68,8.48

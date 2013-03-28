@@ -6,23 +6,12 @@ package app.creator;
 
 import datatypes.ModelDetails;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.GridLayout;
-import java.awt.Menu;
-import java.awt.MenuBar;
-import java.awt.MenuItem;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JProgressBar;
 
 /**
  * The Main class for the environment creation engine. To add a new level extend
@@ -63,16 +52,21 @@ public class CreatorMain implements ActionListener {
 
         MenuBar menuBar = new MenuBar();
         Menu fileMenu = new Menu("File");
-
+        MenuItem rename = new MenuItem("Rename");
         MenuItem load = new MenuItem("Load");
         MenuItem about = new MenuItem("About");
         menuBar.add(fileMenu);
         about.setActionCommand("about");
         load.setActionCommand("load");
+        rename.setActionCommand("rename");
+        fileMenu.add(rename);
         fileMenu.add(about);
         fileMenu.add(load);
+
+
         about.addActionListener(this);
         load.addActionListener(this);
+        rename.addActionListener(this);
         frame.setMenuBar(menuBar);
 
 
@@ -139,7 +133,13 @@ public class CreatorMain implements ActionListener {
             assert currentLevel == 0;
             ((IntroLevel) listOfLevels.get(currentLevel)).reloadValuesFromModel();
             frame.validate();
-        } else if (trigger.equalsIgnoreCase("about")) {
+        } else if(trigger.equals("rename")){
+            String newName = JOptionPane.showInputDialog(frame, "What name do you want to change it to", "Rename file", JOptionPane.QUESTION_MESSAGE);
+            if(newName!=null&&!newName.isEmpty()){
+                model.setTitle(newName);
+                frame.setTitle(newName);
+            }
+        }else if (trigger.equalsIgnoreCase("about")) {
             JOptionPane.showMessageDialog(frame, "This program is a surprise", "About", JOptionPane.INFORMATION_MESSAGE);
         } else if (trigger.equalsIgnoreCase("next")) {
             listOfLevels.get(currentLevel).clearUp();
@@ -194,12 +194,15 @@ public class CreatorMain implements ActionListener {
     private void initializeLevels() {
         listOfLevels = new ArrayList<AbstractLevel>();
 
-        listOfLevels.add(new IntroLevel(model, frame, statusBar, buttonArea));
+        model.setTitle("Default");
+        model.setScale(25);
+        model.setXSize(40);
+        model.setYSize(30);
+//        listOfLevels.add(new IntroLevel(model, frame, statusBar, buttonArea));
 
         DrawingPanel interactionArea = new DrawingPanel();
         interactionArea.setBackground(Color.WHITE);
         listOfLevels.add(new PatternCreatorLevel(model, frame, statusBar,  buttonArea, interactionArea));
-        listOfLevels.add(new AgentGroupCreatorLevel(model, frame, statusBar, buttonArea, interactionArea));
         listOfLevels.add(new FinalLevel(model, frame, statusBar, buttonArea, interactionArea));
 
 

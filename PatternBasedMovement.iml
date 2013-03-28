@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="geomason.1.1" level="project" />
+    <orderEntry type="library" name="abmcs_core" level="project" />
   </component>
 </module>
 

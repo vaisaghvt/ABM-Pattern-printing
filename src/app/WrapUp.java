@@ -27,9 +27,9 @@ class WrapUp implements Steppable {
     private final Model state;
     private final ArrayList<Collection<Point2d>> goalsForPattern;
     private int currentPatternNumber;
-    private final static Point2d startingPoint = new Point2d(1,1);
+    private final static Point2d startingPoint = new Point2d(1,25);
     private static Point2d currentDefaultLocation;
-    private static double yDisplacement =0.0;
+    private static double yDisplacement =0.9;
     private static double xDisplacement =0.5;
 
     public WrapUp(Model state, List<Agent> agentList, ArrayList<Collection<Point2d>> goalsForPattern) {
@@ -67,9 +67,9 @@ class WrapUp implements Steppable {
 
 
     public static Point2d nextDefaultLocation(){
-        currentDefaultLocation = new Point2d(currentDefaultLocation.x+xDisplacement, currentDefaultLocation.y+ yDisplacement);
+        currentDefaultLocation = new Point2d(currentDefaultLocation.x+xDisplacement, currentDefaultLocation.y);
         if(currentDefaultLocation.x> Model.publicInstance.getWorldXSize()){
-            currentDefaultLocation = new Point2d(startingPoint.x, startingPoint.y+ xDisplacement);
+            currentDefaultLocation = new Point2d(startingPoint.x, currentDefaultLocation.y+ yDisplacement);
         }
         return currentDefaultLocation;
     }

@@ -154,8 +154,13 @@ public class Agent extends AgentPortrayal {
             //no preferredDirection            
             prefVelocity = new Vector2d(goal);
             prefVelocity.sub(currentPosition.toPoint());
-            prefVelocity.normalize();
-            prefVelocity.scale(preferredSpeed); //@hunan:added the scale for perferredSpeed
+            if(prefVelocity.length()!=0){
+                prefVelocity.normalize();
+                prefVelocity.scale(preferredSpeed); //@hunan:added the scale for perferredSpeed
+
+
+            }
+            assert !Double.isNaN(prefVelocity.x);
         } else {
 //            System.out.println("goal is null");
             prefVelocity = new Vector2d();
@@ -213,6 +218,7 @@ public class Agent extends AgentPortrayal {
     }
 
     public void setGoal(Point2d goal) {
+        assert !Double.isNaN(goal.x);
 //        System.out.println("Agent " + id + " goal set to " + goal);
         goalReached = false;
         this.goal = goal;

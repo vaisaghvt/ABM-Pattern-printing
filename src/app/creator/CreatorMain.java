@@ -111,7 +111,7 @@ public class CreatorMain implements ActionListener {
 
 
         frame.setResizable(false);
-        frame.setSize(900, 400);
+        frame.setSize(900, 700);
         frame.setLocation(10, 10);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -124,14 +124,14 @@ public class CreatorMain implements ActionListener {
     public void actionPerformed(ActionEvent event) {
         String trigger = event.getActionCommand();
         if (trigger.equalsIgnoreCase("load")) {
-            if (currentLevel != 0) {
+//            if (currentLevel != 0) {
                 listOfLevels.get(currentLevel).clearUp();
                 currentLevel = 0;
-                listOfLevels.get(currentLevel).setUpLevel();
-            }
             loadFile();
+                listOfLevels.get(currentLevel).setUpLevel();
+//            }
             assert currentLevel == 0;
-            ((IntroLevel) listOfLevels.get(currentLevel)).reloadValuesFromModel();
+
             frame.validate();
         } else if(trigger.equals("rename")){
             String newName = JOptionPane.showInputDialog(frame, "What name do you want to change it to", "Rename file", JOptionPane.QUESTION_MESSAGE);
@@ -182,6 +182,7 @@ public class CreatorMain implements ActionListener {
 
 
             model.loadFromFile(file);
+
 
         /**
          * Code to load from file.. Let this wait for a bit...

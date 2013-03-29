@@ -1,27 +1,26 @@
 scale = 25
 xSize = 40
 ySize = 30
-NumberOfGroups = 1
-StartPoint = 6.4,5.84
-EndPoint = 25.94,19.52
 MinSpeed = 0.0
 MaxSpeed = 2.6
 MeanSpeed = 1.3
 SDevSpeed = 0.0
-Size = 1
-NumberOfPatterns = 2
-Pattern asdf : 
-5
-StartPoint = 10.6,5.56 ; EndPoint = 15.08,17.08
-StartPoint = 26.68,10.44 ; EndPoint = 22.04,20.56
-StartPoint = 17.12,9.48 ; EndPoint = 29.4,17.44
-StartPoint = 26.36,5.84 ; EndPoint = 23.76,20.44
-StartPoint = 1.08,17.6 ; EndPoint = 12.08,25.12
-Pattern asdfgg : 
+NumberOfPatterns = 3
+Pattern ease : 
+3
+StartPoint = 23.32,4.72 ; EndPoint = 17.4,3.6
+StartPoint = 19.4,7.52 ; EndPoint = 21.36,3.32
+StartPoint = 28.08,6.76 ; EndPoint = 24.24,9.64
+Pattern erw : 
+3
+StartPoint = 2.36,4.88 ; EndPoint = 3.36,1.48
+StartPoint = 3.44,1.36 ; EndPoint = 5.6,5.48
+StartPoint = 2.2,3.52 ; EndPoint = 6.36,3.32
+Pattern erasdf : 
 6
-StartPoint = 12.28,6.92 ; EndPoint = 12.6,17.72
-StartPoint = 28.2,7.36 ; EndPoint = 22.48,18.68
-StartPoint = 17.64,9.96 ; EndPoint = 25.68,17.72
-StartPoint = 22.92,7.96 ; EndPoint = 29.08,18.96
-StartPoint = 30.64,9.16 ; EndPoint = 16.88,20.16
-StartPoint = 6.48,10.24 ; EndPoint = 14.2,24.76
+StartPoint = 27.92,9.64 ; EndPoint = 29.48,4.52
+StartPoint = 32.68,10.24 ; EndPoint = 26.6,6.8
+StartPoint = 31.28,6.92 ; EndPoint = 27.64,10.28
+StartPoint = 25.92,6.24 ; EndPoint = 32.64,10.12
+StartPoint = 30.44,4.84 ; EndPoint = 33.36,9.56
+StartPoint = 26.12,4.32 ; EndPoint = 33.88,9.0

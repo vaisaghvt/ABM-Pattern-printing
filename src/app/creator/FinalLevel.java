@@ -17,6 +17,7 @@ import java.awt.*;
 class FinalLevel extends AbstractLevel {
 
     private DrawingPanel interactionArea;
+    private AgentInformationDialog agentInformationFrame;
 
     public FinalLevel(ModelDetails model, JFrame frame, JLabel statusBar, JPanel buttonArea, DrawingPanel interactionArea) {
         super(model, frame, statusBar, buttonArea);
@@ -29,6 +30,8 @@ class FinalLevel extends AbstractLevel {
         clearButton.setEnabled(false);
         previousButton.setEnabled(true);
         nextButton.setEnabled(true);
+
+        agentInformationFrame = new AgentInformationDialog(model);
 
 
         frame.setTitle(model.getTitle() + "  - Final Stage -");

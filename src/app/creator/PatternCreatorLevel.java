@@ -34,6 +34,8 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
     private Point currentPoint;
     private JFrame patternChoosingFrame;
     private boolean setupComplete = false;
+    private JButton moveDownButton;
+    private JButton moveUpButton;
 
 
     public PatternCreatorLevel(ModelDetails model, JFrame frame, JLabel statusBar, JPanel buttonArea, DrawingPanel interactionArea) {
@@ -96,15 +98,23 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
                 JScrollPane listScroller = new JScrollPane(listOfPatternNamesInFrame);
 
                 JPanel buttonPanel = new JPanel();
-                buttonPanel.setLayout(new GridLayout(1, 2));
+                buttonPanel.setLayout(new GridLayout(2, 2));
+
+                moveUpButton = new JButton("Move up");
+                moveUpButton.addActionListener(PatternCreatorLevel.this);
+
+                moveDownButton = new JButton("Move down");
+                moveDownButton.addActionListener(PatternCreatorLevel.this);
+
 
                 addPatternButton = new JButton("Add new pattern");
                 addPatternButton.addActionListener(PatternCreatorLevel.this);
 
-
                 removePatternButton = new JButton("Remove Selected pattern");
                 removePatternButton.addActionListener(PatternCreatorLevel.this);
 
+                buttonPanel.add(moveUpButton);
+                buttonPanel.add(moveDownButton);
                 buttonPanel.add(addPatternButton);
                 buttonPanel.add(removePatternButton);
 
@@ -126,83 +136,6 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
 
     @Override
     public void clearUp() {
-        String tempString;
-
-
-
-        double minSpeed=0;
-        do {
-            tempString = (String) JOptionPane.showInputDialog(
-                    null,
-                    "Minimum Speed",
-                    "Input",
-                    JOptionPane.PLAIN_MESSAGE,
-                    null,
-                    null,
-                    "0");
-            try {
-                minSpeed = Double.parseDouble(tempString);
-            } catch (NumberFormatException numException) {
-                continue;
-            }
-        } while (minSpeed<0||minSpeed>2.6);
-
-
-        double maxSpeed=0;
-        do {
-            tempString = (String) JOptionPane.showInputDialog(
-                    null,
-                    "Maximum Speed?",
-                    "Input",
-                    JOptionPane.PLAIN_MESSAGE,
-                    null,
-                    null,
-                    "2.6");
-            try {
-                maxSpeed = Double.parseDouble(tempString);
-            } catch (NumberFormatException numException) {
-                continue;
-            }
-        } while (maxSpeed<minSpeed||maxSpeed>2.6);
-        double meanSpeed = (minSpeed + maxSpeed) /2.0;
-        do {
-            tempString = (String) JOptionPane.showInputDialog(
-                    null,
-                    "Average Speed?",
-                    "Input",
-                    JOptionPane.PLAIN_MESSAGE,
-                    null,
-                    null,
-                    Double.toString(meanSpeed));
-            try {
-                meanSpeed = Double.parseDouble(tempString);
-            } catch (NumberFormatException numException) {
-                continue;
-            }
-        } while (meanSpeed<minSpeed||meanSpeed>maxSpeed);
-
-        double sDev=0.0;
-        do {
-            tempString = (String) JOptionPane.showInputDialog(
-                    null,
-                    "Standard Deviation:",
-                    "Input",
-                    JOptionPane.PLAIN_MESSAGE,
-                    null,
-                    null,
-                    "0.0");
-            try {
-                sDev = Double.parseDouble(tempString);
-            } catch (NumberFormatException numException) {
-                continue;
-            }
-        } while (false);
-
-
-        model.setMinSpeed(minSpeed);
-        model.setMaxSpeed(maxSpeed);
-        model.setMeanSpeed(meanSpeed);
-        model.setSDevSpeed(sDev);
         model.setPatterns(listModel.elements());
         interactionArea.removeMouseListener(this);
         interactionArea.removeMouseMotionListener(this);
@@ -400,6 +333,40 @@ public class PatternCreatorLevel extends AbstractLevel implements MouseListener,
                     interactionArea.repaint();
                 }
             });
+        } else if(e.getSource()==moveUpButton){
+
+            int currentIndex = listOfPatternNamesInFrame.getSelectedIndex();
+            if(currentIndex>0){
+                DestinationPattern newFirst = listModel.getElementAt(currentIndex);
+                DestinationPattern newSecond = listModel.getElementAt(currentIndex-1);
+
+                listModel.removeElementAt(currentIndex);
+                listModel.removeElementAt(currentIndex-1);
+
+                listModel.add(currentIndex-1, newFirst);
+                listModel.add(currentIndex, newSecond);
+
+                listOfPatternNamesInFrame.setSelectedIndex(currentIndex-1);
+
+            }
+
+
+        } else if(e.getSource() ==moveDownButton){
+            int currentIndex = listOfPatternNamesInFrame.getSelectedIndex();
+            if(currentIndex<listModel.size()-1){
+                DestinationPattern newFirst = listModel.getElementAt(currentIndex);
+                DestinationPattern newSecond = listModel.getElementAt(currentIndex+1);
+
+                listModel.removeElementAt(currentIndex+1);
+                listModel.removeElementAt(currentIndex);
+
+                listModel.add(currentIndex, newSecond);
+                listModel.add(currentIndex+1, newFirst);
+
+                listOfPatternNamesInFrame.setSelectedIndex(currentIndex+1);
+
+            }
+
         }
 
     }

@@ -71,6 +71,7 @@ public class PatternLine {
             newGoal.scale(firstAgentDistance+subsequentDistance*i);
             newGoal.add(startPoint);
 
+            assert !Double.isNaN(newGoal.x);
             results.add(newGoal);
         }
 

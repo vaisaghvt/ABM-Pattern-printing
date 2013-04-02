@@ -9,10 +9,10 @@ package app;
 /**
  *
  * @author vaisaghvt
- * 
- * Description : Initialize parameters from xml files. The first line sets which 
+ *
+ * Description : Initialize parameters from xml files. The first line sets which
  * xml file will be used.
- * 
+ *
  */
 public class PropertySet {
 
@@ -21,7 +21,9 @@ public class PropertySet {
 
     public final static boolean HIGH_PRECISION= false;
 
-    public static final String FILE_PATH = "Default";
+
+    public static final String FILE_PATH = "trial1";
+
     public static final double TIME_STEP = 0.05;
 
 

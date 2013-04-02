@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="geomason.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/geomason.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/guava-11.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/guava-11.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/itext-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/j3dcore.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/j3dutils.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/jcommon-1.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/jfreechart-1.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/jmf.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/joda-time-2.0.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/jts-1.11.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/MASON_15.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/quaqua-colorchooser-only.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/vecmath.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/joda-time-2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/joda-time-2.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/MoPlaT/libraries/quaqua-colorchooser-only.jar!/" />
+    </SOURCES>
+  </library>
+</component>
